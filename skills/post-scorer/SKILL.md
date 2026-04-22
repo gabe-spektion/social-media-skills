@@ -24,7 +24,7 @@ The scorer needs two things: the user's voice system and real performance data.
 
 ### Voice system
 
-Read about-me.md, voice.md, and anti-style.md from the project if they exist. If missing, note it and score without voice matching.
+Read about-me.md and voice.md from the project if they exist. If missing, note it and score without voice matching.
 
 ### Performance data
 
@@ -91,9 +91,9 @@ Compare the draft's opening line to the hook types in the top 10%.
 
 ### Voice match (1 to 10)
 
-If voice.md and anti-style.md exist:
+If voice.md exists:
 - Does the post match tone, rhythm, sentence length from voice.md?
-- Does it violate any rule in anti-style.md?
+- Does it violate any rule in voice.md's absence patterns section (what the voice never does)?
 - Does the sentence length match the average from their top performers?
 If no voice files: score against the patterns extracted from their post data.
 
@@ -117,7 +117,7 @@ Based on their data:
 
 - Did the user actually write this or does it read like unedited AI output?
 - Would this post blend naturally into their feed based on their posting history?
-- Are there any red flags: banned words from anti-style.md, generic phrases, corporate tone?
+- Are there any red flags: banned words listed in voice.md's absence patterns, generic phrases, corporate tone?
 - Is it the right length compared to their top performers?
 
 ## Step 5. Output the scorecard
